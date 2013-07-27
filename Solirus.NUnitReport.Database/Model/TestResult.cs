@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Xml.Linq;
 
 namespace Solirus.NUnitReport.Database.Model
 {
@@ -6,7 +6,12 @@ namespace Solirus.NUnitReport.Database.Model
     {
         public int Id { get; set; }
 
-        [Column(TypeName="xml")]
         public string Content { get; set; }
+
+        public XElement XmlContent
+        {
+            get { return XElement.Parse(Content); }
+            set { Content = value.ToString(); }
+        }
     }
 }
