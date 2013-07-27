@@ -59,6 +59,11 @@
     <Compile Include="Migrations\201307271046408_Initial.Designer.cs">
       <DependentUpon>201307271046408_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201307271825323_AddTestResultStatisticsView.cs" />
+    <Compile Include="Migrations\201307271825323_AddTestResultStatisticsView.Designer.cs">
+      <DependentUpon>201307271825323_AddTestResultStatisticsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TestResultStatistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\TestResult.cs" />
   </ItemGroup>
@@ -69,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201307271046408_Initial.resx">
       <DependentUpon>201307271046408_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307271825323_AddTestResultStatisticsView.resx">
+      <DependentUpon>201307271825323_AddTestResultStatisticsView.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
