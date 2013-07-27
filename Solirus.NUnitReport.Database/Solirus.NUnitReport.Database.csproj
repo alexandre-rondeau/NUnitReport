@@ -53,11 +53,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\NUnitReportDbConfiguration.cs" />
+    <Compile Include="Context\NUnitReportDbContext.cs" />
+    <Compile Include="Migrations\201307271046408_Initial.cs" />
+    <Compile Include="Migrations\201307271046408_Initial.Designer.cs">
+      <DependentUpon>201307271046408_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\TestResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201307271046408_Initial.resx">
+      <DependentUpon>201307271046408_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

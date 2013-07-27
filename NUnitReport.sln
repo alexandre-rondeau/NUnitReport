@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solirus.NUnitReport.MSTests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solirus.NUnitReport.NUnitTests", "Solirus.NUnitReport.NUnitTests\Solirus.NUnitReport.NUnitTests.csproj", "{673B79F6-EF56-4EC6-9CCC-791A40C1A89C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B288EE04-F51E-4190-BF7C-CB097BCD41F9}"
+	ProjectSection(SolutionItems) = preProject
+		AddMigration.ps1 = AddMigration.ps1
+		UpdateContext.ps1 = UpdateContext.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
