@@ -1,8 +1,12 @@
 ﻿@using Resources
-@model dynamic
+@model Solirus.NUnitReport.Presentation.Models.HomeModels.IndexHomeModel
 
 @{
     ViewBag.Title = @Global.Home_Title;
 }
 
 <h2>@Global.Home_Title</h2>
+
+<div id="addTestResult">
+    @Html.Partial("AddTestResultModel", Model.AddTestResult)
+</div>

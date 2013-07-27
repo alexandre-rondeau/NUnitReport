@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		UpdateContext.ps1 = UpdateContext.ps1
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solirus", "Solirus\Solirus.csproj", "{730019A1-0456-44A5-B938-6678AEA710C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{673B79F6-EF56-4EC6-9CCC-791A40C1A89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{673B79F6-EF56-4EC6-9CCC-791A40C1A89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{673B79F6-EF56-4EC6-9CCC-791A40C1A89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730019A1-0456-44A5-B938-6678AEA710C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730019A1-0456-44A5-B938-6678AEA710C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730019A1-0456-44A5-B938-6678AEA710C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730019A1-0456-44A5-B938-6678AEA710C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

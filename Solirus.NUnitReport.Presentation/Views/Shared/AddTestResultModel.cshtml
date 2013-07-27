@@ -1,0 +1,22 @@
+﻿@using Resources
+@model Solirus.NUnitReport.Presentation.Models.TestResultModels.AddTestResultModel
+
+@using (Ajax.BeginForm("Add", "TestResult", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "addTestResult", InsertionMode=InsertionMode.Replace }, htmlAttributes: new { enctype = "multipart/form-data" }))
+{
+    <div class="control-group">
+        @Html.LabelFor(m => m.TestResultFile, Global.UploadNewTestResult)
+        <div class="controls">
+            <div class="fileupload fileupload-new" data-provides="fileupload">
+                <span class="btn btn-file">
+                    <span class="fileupload-new">@Global.SelectFile</span>
+                    <span class="fileupload-exists">@Global.Change</span>
+                    <input type="file" name="@Html.NameFor(m => m.TestResultFile)" id="@Html.IdFor(m => m.TestResultFile)" />
+                </span>
+                <span class="fileupload-preview"></span>
+                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                <input type="submit" value="@Global.Upload"class = "btn btn-primary fileupload-exists"/>
+            </div>
+            @Html.ValidationMessageFor(m => m.TestResultFile)
+        </div>
+    </div>
+}

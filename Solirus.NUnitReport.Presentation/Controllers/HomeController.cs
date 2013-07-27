@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using Solirus.NUnitReport.Presentation.Models.HomeModels;
 
 namespace Solirus.NUnitReport.Presentation.Controllers
 {
@@ -9,7 +10,8 @@ namespace Solirus.NUnitReport.Presentation.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var model = new IndexHomeModel();
+            return View("Index", model);
         }
 
     }

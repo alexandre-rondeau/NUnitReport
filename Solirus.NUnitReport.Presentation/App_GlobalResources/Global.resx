@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
   <data name="Home_Title" xml:space="preserve">
     <value>NUnit Report</value>
+  </data>
+  <data name="NotAValidTestResultFile" xml:space="preserve">
+    <value>Not a valid NUnit test result file.</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>Select file</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="UploadNewTestResult" xml:space="preserve">
+    <value>Upload new test result</value>
   </data>
 </root>

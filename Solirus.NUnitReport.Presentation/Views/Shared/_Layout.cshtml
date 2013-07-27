@@ -1,1 +1,24 @@
-﻿@RenderBody()
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" href="~/Content/images/favicon.ico" />
+        @Styles.Render("~/Content/nunitreportstyle")
+        @RenderSection("style", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("HeadAddOn", required:false)
+        <title>@ViewBag.Title</title>
+    </head>
+    <body>
+        @RenderBody()
+        @Scripts.Render("~/bundles/nunitreportscripts")
+        @Scripts.Render("~/bundles/jqueryval")
+        @RenderSection("javascript", required: false)
+    </body>
+</html>
